@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Landing.module.sass";
-import clsx from "clsx";
+import LandingTile from "../components/Landing/Tile";
 
 const Home: NextPage = () => {
   return (
@@ -23,18 +23,34 @@ const Home: NextPage = () => {
           </span>
         </h1>
       </div>
-      <div className={clsx(styles.tile, styles.workshops)}>
+      <LandingTile
+        className={styles.workshops}
+        hoverPic="/warsztat.jpg"
+        href="/warsztaty"
+      >
         <p>Warsztaty szamowe</p>
-      </div>
-      <div className={clsx(styles.tile, styles.consultation)}>
+      </LandingTile>
+      <LandingTile
+        className={styles.consultation}
+        href="/konsultacje"
+        hoverPic="/foteliki.jpg"
+      >
         <p>Konsultacje szamowe</p>
-      </div>
-      <div className={clsx(styles.tile, styles.workup)}>
+      </LandingTile>
+      <LandingTile
+        className={styles.workout}
+        hoverPic="/pustynia.jpg"
+        href="/treningi"
+      >
         <p>Treningi</p>
-      </div>
-      <div className={clsx(styles.tile, styles.blog)}>
+      </LandingTile>
+      <LandingTile
+        className={styles.blog}
+        hoverPic="/fizjognomia.jpg"
+        href="/blog"
+      >
         <p>Blogasek</p>
-      </div>
+      </LandingTile>
     </div>
   );
 };
