@@ -1,0 +1,29 @@
+@import variables
+
+.root
+  display: grid
+  grid-template: 1fr 1fr / 2fr 1fr 1fr
+  height: 100vh
+
+.main
+  grid-row: span 2
+
+  h1
+    font-weight: 300
+
+.tile
+  border: 1px solid $landing-border-color
+  border-bottom: 0
+  border-top: 0
+  border-right: 0
+  display: flex
+  align-items: flex-end
+  padding: 1.5rem 2rem
+
+  p
+    font-size: 2rem
+    font-weight: 300
+    margin: 0
+
+.workshops, .consultation
+  border-bottom: 1px solid $landing-border-color
