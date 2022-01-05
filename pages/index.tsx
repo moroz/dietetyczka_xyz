@@ -16,9 +16,11 @@ const Home: NextPage = () => {
         <h1>
           Siemanko, tu Anka.
           <br />
-          Pomagam ludziom
-          <br />
-          zdrowiej jeść.
+          <span className={styles.rainbow}>
+            Pomagam ludziom
+            <br />
+            zdrowiej jeść.
+          </span>
         </h1>
       </div>
       <div className={clsx(styles.tile, styles.workshops)}>
