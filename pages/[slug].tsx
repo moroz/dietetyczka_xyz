@@ -11,7 +11,7 @@ interface Props {
 
 const DynamicPage: React.FC<Props> = ({ page, html }) => {
   return (
-    <Layout>
+    <Layout title={page.title}>
       <h1>{page.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
