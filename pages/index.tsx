@@ -28,14 +28,14 @@ const Home: NextPage = () => {
         hoverPic="/warsztat.jpg"
         href="/warsztaty"
       >
-        <p>Warsztaty szamowe</p>
+        <p>Warsztaty żywieniowe</p>
       </LandingTile>
       <LandingTile
         className={styles.consultation}
         href="/konsultacje"
         hoverPic="/foteliki.jpg"
       >
-        <p>Konsultacje szamowe</p>
+        <p>Konsultacje dietetyczne</p>
       </LandingTile>
       <LandingTile
         className={styles.workout}
