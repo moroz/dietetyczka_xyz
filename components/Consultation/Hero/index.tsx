@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./Hero.module.sass";
 
@@ -37,8 +38,11 @@ const ConsultationsHero: React.FC<Props> = () => {
           <p>
             Czas trwania konsultacji: 50 minut
             <br />
-            Cena konsultacji: 150 ziko
+            Cena konsultacji: 150 PLN
           </p>
+          <Link href="/">
+            <a>&lt;&lt; powrót</a>
+          </Link>
         </footer>
       </div>
     </section>
