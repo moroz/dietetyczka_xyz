@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         hoverPic="/warsztat.jpg"
         href="/warsztaty"
       >
-        <p>Warsztaty żywieniowe</p>
+        <p>Warsztaty, szkolenia</p>
       </LandingTile>
       <LandingTile
         className={styles.consultation}
@@ -42,14 +42,14 @@ const Home: NextPage = () => {
         hoverPic="/pustynia.jpg"
         href="/treningi"
       >
-        <p>Treningi</p>
+        <p>Kontakt</p>
       </LandingTile>
       <LandingTile
         className={styles.blog}
         hoverPic="/fizjognomia.jpg"
         href="/blog"
       >
-        <p>Blogasek</p>
+        <p>O mnie</p>
       </LandingTile>
     </div>
   );
