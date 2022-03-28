@@ -47,7 +47,7 @@ const Home: NextPage = () => {
       <LandingTile
         className={styles.blog}
         hoverPic="/fizjognomia.jpg"
-        href="/blog"
+        href="/o-mnie"
       >
         <p>O mnie</p>
       </LandingTile>
