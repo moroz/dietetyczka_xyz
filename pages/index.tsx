@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       </LandingTile>
       <LandingTile
         className={styles.workout}
-        hoverPic="/pustynia.jpg"
+        hoverPic="/konsultacje-thumb.jpg"
         href="/kontakt"
       >
         <p>Kontakt</p>
