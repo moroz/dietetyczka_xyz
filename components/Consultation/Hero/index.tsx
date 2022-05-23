@@ -26,6 +26,7 @@ const ConsultationsHero: React.FC<Props> = () => {
           odchudzania oraz które w wyniku choroby, zmian życiowych potrzebują
           zmodyfikować swój dotychczasowy jadłospis.
         </p>
+        <p>Spotkania online lub stacjonarnie.</p>
         <ul className={styles.bullets}>
           {bullets.map((bull, i) => (
             <li key={i}>
@@ -34,12 +35,6 @@ const ConsultationsHero: React.FC<Props> = () => {
           ))}
         </ul>
         <footer>
-          <p>Spotkania online lub stacjonarnie.</p>
-          <p>
-            Czas trwania konsultacji: 50 minut
-            <br />
-            Cena konsultacji: 150 PLN
-          </p>
           <Link href="/">
             <a>&lt;&lt; powrót</a>
           </Link>

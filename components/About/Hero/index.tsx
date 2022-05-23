@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.sass";
+import Link from "next/link";
 
 interface Props {}
 
@@ -9,8 +10,8 @@ const AboutHero: React.FC<Props> = () => {
       <div className={styles.content}>
         <h1>O mnie</h1>
         <p>
-          Moją misją życiową jest przekazanie wiedzy na temat zdrowego żywienia
-          oraz umiejętnego komponowania posiłków bez poczucia lęku i kartki.
+          Nazywam się Anna Golińska. Ukończyłam studia magisterskie na kierunku
+          dietetyka na Warszawskim Uniwersytecie Medycznym.
         </p>
         <p>
           Współpracuję z pacjentami poprzez zmianę nawyków żywieniowych oraz
@@ -25,6 +26,11 @@ const AboutHero: React.FC<Props> = () => {
           nieudane próby odchudzania, chcieliby zmienić swój styl życia lub w
           wyniku choroby potrzebują zmienić sposób żywienia.
         </p>
+        <footer>
+          <Link href="/">
+            <a>&lt;&lt; powrót</a>
+          </Link>
+        </footer>
       </div>
     </section>
   );
