@@ -1,7 +1,7 @@
 import React from "react";
+import ContactCTA from "../../components/ContactCTA";
 import HeroColumns from "../../components/HeroColumns";
 import styles from "./Konsultacje.module.sass";
-import Link from "next/link";
 
 interface Props {}
 
@@ -34,6 +34,7 @@ const ConsultationsPage: React.FC<Props> = () => {
           </li>
         ))}
       </ul>
+      <ContactCTA />
     </HeroColumns>
   );
 };

@@ -1,0 +1,20 @@
+@import ../../styles/_variables.sass
+
+$cta-height: 2.85rem
+
+.cta
+  a
+    display: inline-block
+    color: black
+    background: white
+    height: $cta-height
+    padding: 0 #{$cta-height * 0.5}
+    line-height: $cta-height
+    font-size: 1.2em
+    border-radius: $cta-height * 0.5
+    font-weight: bold
+    margin-bottom: 3rem
+
+    +mobile-only
+      margin-top: 2rem
+

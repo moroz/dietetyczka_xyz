@@ -1,4 +1,5 @@
 import React from "react";
+import ContactCTA from "../components/ContactCTA";
 import HeroColumns from "../components/HeroColumns";
 
 interface Props {}
@@ -24,6 +25,7 @@ const AboutPage: React.FC<Props> = () => {
         próby odchudzania, chcieliby zmienić swój styl życia lub w wyniku
         choroby potrzebują zmienić sposób żywienia.
       </p>
+      <ContactCTA />
     </HeroColumns>
   );
 };

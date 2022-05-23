@@ -2,6 +2,7 @@ import React from "react";
 import HeroColumns from "../../components/HeroColumns";
 import styles from "./Warsztaty.module.sass";
 import Link from "next/link";
+import ContactCTA from "../../components/ContactCTA";
 
 interface Props {}
 
@@ -52,11 +53,7 @@ const WorkshopsPage: React.FC<Props> = () => {
           </p>
         </article>
       </div>
-      <div className={styles.cta}>
-        <Link href="/kontakt">
-          <a className={styles.cta}>Skontaktuj się ze mną</a>
-        </Link>
-      </div>
+      <ContactCTA />
     </HeroColumns>
   );
 };
