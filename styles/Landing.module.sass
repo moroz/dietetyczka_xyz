@@ -1,16 +1,22 @@
 @import variables
 
 .root
-  display: grid
-  grid-template: 1fr 1fr / 3.85fr 2fr 2fr
+  display: flex
   height: 100vh
+  flex-direction: column
+
+  +desktop-only
+    display: grid
+    grid-template: 1fr 1fr / 3.85fr 2fr 2fr
 
 .main
   grid-row: span 2
   display: flex
   align-items: center
-
   padding: 3rem 7rem
+
+  +mobile-only
+    flex: 1
 
   h1
     font-weight: 300
@@ -50,8 +56,18 @@
     .hoverPic
       opacity: 0
 
+  +mobile-only
+    &:hover
+      img
+        opacity: .3
+
 .workshops, .consultation
   border-bottom: 1px solid $landing-border-color
+
++mobile-only
+  .tile
+    border-bottom: 0
+    border-top: 1px solid $landing-border-color
 
 .hoverPic
   position: absolute
