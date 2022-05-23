@@ -30,7 +30,7 @@ const WorkshopsPage: React.FC<Props> = () => {
             <a
               href="http://www.tanitapolska.pl/"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               TANITA DC-430 S MA
             </a>
@@ -38,7 +38,7 @@ const WorkshopsPage: React.FC<Props> = () => {
             <a
               href="https://pl.wikipedia.org/wiki/Analiza_impedancji_bioelektrycznej"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               BIA
             </a>
