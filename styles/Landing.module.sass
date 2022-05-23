@@ -17,11 +17,14 @@
 
   +mobile-only
     flex: 1
+    padding: 1.5rem
 
   h1
     font-weight: 300
     font-size: 4rem
-    line-height: 5rem
+    line-height: 1.25
+    +mobile-only
+      font-size: 2rem
 
 .rainbow
   color: transparent
@@ -48,6 +51,13 @@
     font-size: 2rem
     font-weight: 300
     margin: 0
+
+  +mobile-only
+    padding: .5rem 1.5rem
+
+    p
+      font-size: 1.5rem
+
 
   &:hover
     text-decoration: none
